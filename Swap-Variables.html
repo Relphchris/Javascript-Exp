@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Swap Variables</title>
+</head>
+<body>
+  <p id="result"></p>
+
+  <script>
+    // Swap the values of the variables
+    var a = 10;
+    var b = 20;
+
+    var temp = a;
+    a = b;
+    b = temp;
+
+    // Update the HTML element to display the new values
+    var resultElement = document.getElementById('result');
+    resultElement.textContent = 'a: ' + a + ', b: ' + b;
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Swap Variables</title>
+</head>
+<body>
+  <p>Original values:</p>
+  <p id="originalValues">a: 10, b: 20</p>
+
+  <button onclick="swapVariables()">Swap Variables</button>
+
+  <p>Swapped values:</p>
+  <p id="swappedValues"></p>
+
+  <script>
+    // Initial values
+    var a = 10;
+    var b = 20;
+
+    // Function to swap the values of the variables
+    function swapVariables() {
+      // Swap the values using a temporary variable
+      var temp = a;
+      a = b;
+      b = temp;
+
+      // Update the HTML elements to display the new values
+      document.getElementById('originalValues').textContent = 'Original values: a: ' + a + ', b: ' + b;
+      document.getElementById('swappedValues').textContent = 'Swapped values: a: ' + b + ', b: ' + a;
+	  // Log the swapped values to the console
+	  //console.log("Original values: a:", a, ", b:", b);
+	  //console.log("Swapped values: a:", b, ", b:", a);
+    }
+  </script>
+</body>
+</html>
